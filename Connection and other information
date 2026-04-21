@@ -1,0 +1,42 @@
+
+### **Required Components List**
+
+1.  **Microcontroller:**
+    * **Raspberry Pi Pico** (or Pico W) - 1 unit.
+2.  **Display:**
+    * **0.96" OLED Display** (SSD1306, 128x64 resolution, I2C Interface) - 1 unit.
+3.  **Sensor:**
+    * **INA219 High-Side DC Current Sensor** (I2C Interface) - 1 unit.
+4.  **Buttons:**
+    * **Push Buttons** (Tactile Switches) - 2 units (For 'Next' and 'Select' navigation).
+5.  **Audio Feedback:**
+    * **Active/Passive Buzzer** - 1 unit (For UI tones and continuity alerts).
+6.  **Resistors:**
+    * **10k Ohm Resistor** - 1 unit (For Ohm-meter/Voltage divider circuit).
+    * **220 Ohm Resistor** (Optional) - 1 unit (For LED testing protection).
+7.  **Power Source:**
+    * **3.7V Li-ion Battery** (e.g., 18650 or Li-Po) - 1 unit.
+    * **TP4056 Charging Module** (Optional, for battery charging).
+
+
+
+OLED SCL,GP5
+OLED SDA,GP4
+INA219 SCL,GP3
+INA219 SDA,GP2
+Next Button,GP14 - GND
+Select Button,GP15 - GND
+LED Probe (+),GP16 (-),GND
+Buzzer (+),GP17 (-) GND
+Ohm Meter Probe,GP26 (-) GND
+3.3V  ───[ 10k Register ]─── GP26
+
+GP26 ─────── (+) Positive Probe
+
+GND ─────── (-) Negative Probe
+
+
+
+
+
+
